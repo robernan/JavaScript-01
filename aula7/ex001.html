@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeiros passos de dom</title>
+    <style>
+        body
+        {
+            background-color: rgb(0, 162, 255);
+            color: white;
+            font:normal 15pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>iniciando estudos</h1>
+    <p>aki vai o resultado<strong> DOM</strong></p>
+    <p>aprendendo usar o </p>
+    <p class="dm">e alterando com o <strong>DOM</strong></p>
+    <div id="msg">clique em mim</div>
+    <script>
+        var corpo = window.document,body
+        var dm =document.getElementsByClassName('dm')[0]
+        var d = document.getElementById('msg')
+     var p1 = document.getElementsByTagName('p')[0]
+     window.document.write('esta escrito assim:' + p1.innerText)
+     p1.style.color ='darkred'
+        d .innerHTML ='estou aguardando...'
+        d.style.backgroundColor= 'red'
+        window,alert('documento alterado em vermelho')
+        dm.innerText= 'o DOM pode alterar tudo no documento'
+        //tambem poderia ser por var d = document.querySelector('div#msg') nesse caso usa se no estylo CSS com . pra CLASS e # pra ID// 
+        
+    </script>
+</body>
+</html>
