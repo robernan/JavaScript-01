@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>indentificador de nacionalidade</title>
+</head>
+<body>
+    <main>
+        <h1>estrangeiro ou não?</h1>
+        <h1>diga em qual pais voce esta agora </h1>
+        
+            <p>pais <input type="text" name="pais" id="pais"></p>
+            <input type="button" value="calcular">
+            <div
+            id="res">olha onde voçe esta,</div>
+
+        
+        <script>
+           function calcular(){
+            var pais = document.querySelector('input#pais')
+            var 
+            var res= document.querySelector('div#res')
+            var nacao = (pais.value)
+           }
+           res.innerHTML = (`seu pais atual eh ${nacao}`) 
+
+           if ( pais != 'Brasil') {
+            res.innerHTML += ' voçê e extrangeiro'
+           } 
+           else{
+            res.innerHTML += 'voçê e brasileiro'
+           }
+
+        </script>
+    </main>
+</body>
+</html>
