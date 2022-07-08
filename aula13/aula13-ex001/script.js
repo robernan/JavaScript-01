@@ -16,16 +16,18 @@ msg.innerHTML =`agora e exatamente
 </strong> !`
 
 if ( hora >= 0 && hora < 12 ) {
-    //'BOM DIA !'
+    sauda.innerHTML='BOM DIA !'
     img.src = 'manha3.jpg'
-
-} else if ( hora >= 12 &&  hora < 18 ) {
-//BOA TARDE!
-  img.src = 'tarde.jpg'
+    document.body.style.background ='#DFFD5E'
+} 
+else if ( hora >= 12 &&  hora < 18 ) {
+    //BOA TARDE!
+    document.bpdy.style.background='#E6C77A'
+    img.src = 'tarde.jpg'
 } 
 else {
-    //BOA NOITE !   
-     document.body.style.background = '#e2cd9f'
+   
+     document.body.style.background = '#61667A'
     img.src ='noite2.jpg'
 }
 
@@ -53,7 +55,8 @@ switch(diaSem) {
     case 6:
         dia.innerHTML =   'hoje e sabado'
         break
-        default:
+
+    default:
             dia.innerHTML =   '[erro] dia invalido!'
 
     }
