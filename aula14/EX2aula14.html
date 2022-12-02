@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modelo de exercicio</title>
+    <style>
+        body{
+         height: 100vh;
+         width: 100vw;
+         text-align: center;
+         background-color: rgb(31, 174, 218);
+         margin:auto;
+         font: normal 15pt arial;
+       }
+        header{
+            /* margin: auto; */
+        color: white;
+        text-align: center;
+         font-size:1.5em;
+        }
+     section{
+         background-color:white;
+        padding: 15px;
+        border-radius: 10px;
+        width: 500px;
+        text-align: left;
+        margin: auto;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.63);     
+    }
+    div#res{
+        margin: auto;
+        width:400px;
+    }
+    footer{
+        font-style: italic;
+        font-weight: bolder;
+    }
+
+
+    </style>
+</head>
+<body>
+    <head>
+        <h1> titulo</h1>
+    </head>
+    <section>
+        <div>
+            <p>NUMERO <input type="number" name="num"id="txtn"> <input type="button"value="gerar tabuada"onclick="tabuada()"></p>
+        </div>
+        <div>
+         <select name="tabuada" id="seltab" size="10">
+            <option>Digite um numero acima</option>
+         </select>
+        </div>
+
+    </section>
+    <footer>
+        <p>
+            &copy;robernan almeida
+        </p>
+    </footer>
+    <script src="script1.js"></script>
+</body>
+</html>

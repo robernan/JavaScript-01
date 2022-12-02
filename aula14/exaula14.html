@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>super calculadora</title>
+    <style>
+        body{
+         height: 100vh;
+         width: 100vw;
+         text-align: left;
+         background-color: rgb(31, 174, 218);
+         margin: auto;
+       }
+        header{
+            text-align: center;
+           font-size:1.5em;
+        }
+     section{
+         background-color:white;
+        padding: 15px;
+        border-radius: 10px;
+        width: 500px;
+        /* height: auto; */
+        margin: auto;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.63);     
+    }
+    div#res{
+        margin: auto;
+        width:400px;
+    }
+
+
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <h1>vamos calcular</h1>
+        </header>
+
+        <div>
+            <p>inicio <input type="number"name="inicio"id="txti"></p> 
+            
+            <p>fim  <input type="number" name="fim"id="txtf"></p>
+            
+            <p> passo <input type="number"name="passo"id="txtp"> </p>
+            
+            <p><input type="button" value="contar" onclick=contar()></p>
+
+        </div>
+
+        <div id="res">
+           preparando a contagem!!
+           
+        </div>
+        
+    </section>
+    <script src="script1.js"></script>
+</body>
+</html>
